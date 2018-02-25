@@ -1,7 +1,12 @@
 
                   3D maze   
                  
-This is a class describing a 3D maze   
+This class generates a 3D maze and contain descriptions of it.
+The algorithm is flawed, in that it partitions connected rooms into sets, then chooses one stair up to the next floor pr. set.
+This means that if you want to go somewhere on the same floor, but can't find a way, the answer is always to be found on the floors above, but never below.
+
+This can be avoided by properly mapping sets all the way through, and will be done when time allows.
+
 Usage:  
 
 //Create a maze by   
